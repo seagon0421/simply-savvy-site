@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply Savvy Charcuterie</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #9ca184;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 1rem;
+    }
+    nav {
+      text-align: center;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #9ca184;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #9ca184;
+    }
+    .cta-button {
+      background-color: #9ca184;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #f1f1ec;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .stock-image {
+      width: 100%;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+    }
+    ul.menu-list li {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Simply Savvy Charcuterie Logo" />
+    <h1>Simply Savvy Charcuterie</h1>
+    <p><em>Savor Something Beautiful.</em></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Simply Savvy</h2>
+    <p>
+      At Simply Savvy Charcuterie, every board is a carefully curated work of art — made to bring people together and make your moments memorable. Based in Menomonee Falls, WI, we specialize in crafting beautiful, custom charcuterie boards for gatherings big or small.
+    </p>
+    <p>
+      Whether it’s a cozy night in, a celebration with friends, or a corporate event, we believe in making every bite special. As a locally owned business, we focus on fresh ingredients, eye-catching presentation, and a touch of creative flair.
+    </p>
+    <p>Simply put: simple, stunning, and totally satisfying.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu / Offerings</h2>
+    <img src="menu.jpg" alt="Charcuterie Board Menu" class="stock-image" />
+    <ul class="menu-list">
+      <li><strong>Char-Cutie Cups</strong> – $10 each</li>
+      <li><strong>Mini Box (1–2 servings)</strong> – $20</li>
+      <li><strong>Small Board (3–4 servings)</strong> – $55</li>
+      <li><strong>Medium Board (5–7 servings)</strong> – $85</li>
+      <li><strong>Large Board (8–12 servings)</strong> – $130</li>
+      <li><strong>Grazing Tables</strong> – Custom Pricing (Request a Quote)</li>
+    </ul>
+    <a href="#contact" class="cta-button">Request a Quote</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:simplysavvycharcuterie@gmail.com">simplysavvycharcuterie@gmail.com</a></p>
+    <p>Phone: <a href="tel:2627209633">262-720-9633</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/simplysavvycharcuterie" target="_blank">@simplysavvycharcuterie</a></p>
+    <h3>Request a Quote</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label>Name:<br /><input type="text" name="name" required /></label><br /><br />
+      <label>Email:<br /><input type="email" name="email" required /></label><br /><br />
+      <label>Phone (optional):<br /><input type="tel" name="phone" /></label><br /><br />
+      <label>Event Date:<br /><input type="date" name="event_date" /></label><br /><br />
+      <label>Type of Board / Event:<br /><input type="text" name="type" /></label><br /><br />
+      <label>Message:<br /><textarea name="message" rows="4" required></textarea></label><br /><br />
+      <button type="submit" class="cta-button">Send Request</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Simply Savvy Charcuterie • Menomonee Falls, WI
+  </footer>
+</body>
+</html>
