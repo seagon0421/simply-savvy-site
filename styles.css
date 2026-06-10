@@ -77,3 +77,12 @@
     text-align: center;
   }
 }
+
+
+/* Show more of brunch and letter board photos */
+.mini-card img.show-full-photo {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: var(--cream);
+  padding: 8px;
+}
