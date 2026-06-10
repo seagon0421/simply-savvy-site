@@ -1,421 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SJ7EQNNYXX');
-</script>
-
- <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simply Savvy Charcuterie</title>
-  <link rel="icon" href="favicon.jpg" type="image/png">
-  <!-- other links like fonts etc. -->
-</head>
- <link rel="icon" href="favicon.jpg" type="image/png">
+  <link rel="icon" href="favicon.jpg" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ7EQNNYXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SJ7EQNNYXX');
+  </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simply Savvy Charcuterie</title>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&family=Montserrat:wght@500&family=Allura&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #ffffff;
-      color: #333;
-    }
-
-   header {
-      background: url('assets/Banner Picture.png') center/cover no-repeat;
-      height: 70vh; /* you can adjust this shorter/taller */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding-top: 1rem; /* distance from top */
-      color: white;
-      text-align: center;
-      position: relative;
-    }
-
-
-   header img {
-      max-width: 600px;
-      margin-bottom: 0.5rem; /* tighten space between logo and tagline */
-    }
-
-header h1 {
-      font-family: 'Allura', cursive;
-      font-size: 3rem;
-      font-weight: 400;
-      margin: 0;
-    }
-
-
-    nav {
-      background-color: #9ca184;
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 4rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      color: #9ca184;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    h2::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: #9ca184;
-      margin: 0.5rem auto 0;
-    }
-
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-
-    .menu-card {
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 1rem;
-      background-color: #fafafa;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .menu-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .menu-card h3 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .menu-card img {
-      width: 200px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    input, textarea, button {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background-color: #9ca184;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.2s;
-    }
-
-    button:hover {
-      background-color: #8d9473;
-      transform: scale(1.02);
-    }
-
-    .announcement {
-      text-align: center;
-      font-weight: bold;
-      color: #555;
-      font-size: 1rem;
-      margin: 2rem 0;
-    }
-
-    .testimonial {
-      text-align: center;
-      font-style: italic;
-      color: #777;
-      margin: 3rem auto 0;
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #9ca184;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 0.5rem 0.7rem;
-      cursor: pointer;
-      font-size: 1.2rem;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      z-index: 999;
-    }
-
-    footer {
-      background-color: #f5f5f5;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-    }
-
-    .social-icons {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .social-icons img {
-      width: 28px;
-      height: 28px;
-      transition: transform 0.2s;
-      filter: grayscale(100%);
-    }
-
-    .social-icons img:hover {
-      transform: scale(1.1);
-    }
-
-    .tagline {
-      font-family: 'Allura', cursive;
-      font-size: 3rem;
-      color: white;
-      margin-top: 0.5rem;
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 768px) {
-  header {
-    height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  header img {
-    width: 80%;
-    max-width: 350px;
-    margin-bottom: 0.5rem;
-  }
-
-  .tagline {
-    font-size: 2rem;
-    padding: 0 1rem;
-  }
-
-  nav {
-    padding: 0.5rem;
-  }
-
-  nav a {
-  display: inline-block;
-  margin: 0 0.5rem;
-  font-size: 0.9rem;
-  }
-
-  section {
-    padding: 2rem 1rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  .menu-grid {
-    grid-template-columns: 1fr; /* stack cards vertically */
-  }
-
-  .menu-card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .menu-card {
-    padding: 1rem;
-  }
-
-  form {
-    padding: 0 1rem;
-  }
-
-  .back-to-top {
-    font-size: 1rem;
-    padding: 0.4rem 0.6rem;
-    bottom: 15px;
-    right: 15px;
-  }
- .section-divider {
-    display: block;
-    margin: 1.5rem auto 2rem;
-    width: 300px;       /* ⬅️ increase for longer look */
-    height: auto;
-    max-height: 25px;           /* make it thinner */ 
-    opacity: 0.7;
-    object-fit: contain;
-
-  }
-
-
-  </style>
+  <title>Simply Savvy Charcuterie | Luxury Charcuterie in Menomonee Falls WI</title>
+  <meta name="description" content="Custom charcuterie boards, grazing tables, Char-Cutie Cups, brunch boards, and event catering in Menomonee Falls, Wisconsin." />
 </head>
 <body>
-  <header>
-    <img src="assets/White Logo SS.png" alt="Simply Savvy Charcuterie Logo" />
-     
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
+  <nav class="site-nav">
+    <a class="brand" href="index.html">Simply Savvy</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="boards.html">Boards</a>
+      <a href="grazing.html">Grazing Tables</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Request a Quote</a>
+    </div>
   </nav>
 
-  <section id="about">
-    <h2>About Simply Savvy</h2>
-    <p style="text-align:center;">Located in Menomonee Falls, WI, Simply Savvy Charcuterie is your local destination for beautifully crafted grazing boards and custom charcuterie options. Whether it's for a wedding, a special event, or simply an indulgent evening, we focus on blending fresh, high-quality ingredients with a curated aesthetic that’s as pleasing to the eyes as it is to the tastebuds.<br><br>We believe that every gathering deserves a touch of elegance, which is why we offer a variety of options—each designed to elevate your experience. From our Char-Cutie Cups to the impressive grazing tables, Simply Savvy is here to make your occasion unforgettable.<br><br>Let us create something beautiful for you to savor.</p>
+
+  <header class="hero home-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner reveal">
+      <img class="hero-logo" src="assets/White Logo SS.png" alt="Simply Savvy Charcuterie Logo" />
+      <p class="eyebrow">Menomonee Falls, Wisconsin</p>
+      <h1>Elevated charcuterie for every occasion.</h1>
+      <p class="hero-copy">Custom boards, grazing tables, Char-Cutie Cups, brunch boards, and beautiful event spreads made to impress.</p>
+      <div class="button-row">
+        <a class="btn primary" href="boards.html">View Boards</a>
+        <a class="btn light" href="contact.html">Request a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section intro-strip reveal">
+    <p class="script">simply beautiful, simply delicious</p>
+    <h2>Designed for showers, weddings, brunches, birthdays, corporate events, and cozy nights in.</h2>
   </section>
 
-  <div class="announcement">Pickup & delivery available in Menomonee Falls and surrounding areas.</div>
-
-  <section id="menu">
-    <h2>Menu</h2>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <h3>Char-Cutie Cups</h3>
-        <img src="assets/pink cup.jpg" alt="pink cup">
-        <p><strong>$10 per Cup</strong></p>
-        <p><strong>Discount pricing for bulk orders!</strong></p>
-      </div>
-      <div class="menu-card">
-        <h3>Small Board (2–4)</h3>
-        <img src="assets/Small board 2.jpg" alt="Small Board 2">
-        <p><strong>$60</strong></p>
-      </div>
-      <div class="menu-card">
-        <h3>Medium Board (6-8)</h3>
-        <img src="assets/medium 3.jpg" alt="medium 3">
-        <p><strong>$105</strong></p>
-      </div>
-      <div class="menu-card">
-        <h3>Large Board (10-12)</h3>
-        <img src="assets/Large.jpg" alt="Large">
-        <p><strong>$160</strong></p>
-      </div>
-      <div class="menu-card">
-        <h3>Brunch Board</h3>
-        <img src="assets/brunch new.jpg" alt="Brunch Board">
-        <p><strong>Custom Quote</strong></p>
-      </div>
-      <div class="menu-card">
-        <h3>Letter or Number Board</h3>
-        <img src="assets/Letter new.jpg" alt="Letter">
-        <p><strong>Custom Quote</strong></p>
-      </div>
-      <div class="menu-card">
-        <h3>Grazing Table</h3>
-        <img src="assets/Grazing.jpg" alt="Grazing">
-        <p><strong>Custom Quote</strong></p>
-      </div>
-      <div class="menu-card">
-        <h3>Specialty Board</h3>
-        <img src="assets/Special new.jpg" alt="Specialty">
-        <p><strong>Custom Quote</strong></p>
-      </div>
+  <section class="section">
+    <div class="section-heading reveal">
+      <p class="eyebrow dark">Our specialties</p>
+      <h2>Choose your spread</h2>
+    </div>
+    <div class="feature-cards">
+      <article class="feature-card reveal">
+        <img src="assets/Small board 2.jpg" alt="Charcuterie board" />
+        <div><h3>Boards</h3><p>Small, medium, and large boards styled with fresh, high-quality ingredients.</p><a href="boards.html">Explore boards</a></div>
+      </article>
+      <article class="feature-card reveal">
+        <img src="assets/Grazing.jpg" alt="Grazing table" />
+        <div><h3>Grazing Tables</h3><p>Full-service displays for weddings, showers, holidays, and corporate celebrations.</p><a href="grazing.html">View grazing tables</a></div>
+      </article>
+      <article class="feature-card reveal">
+        <img src="assets/pink cup.jpg" alt="Char-Cutie Cups" />
+        <div><h3>Char-Cutie Cups</h3><p>Individual portions that are easy for guests to grab and enjoy.</p><a href="boards.html#cups">View cups</a></div>
+      </article>
     </div>
   </section>
 
- <div class="testimonial">★★★★★<br>"Simply Savvy Charcuterie was PERFECT for my baby shower! The cups were a hit and they even offered gluten free cups for a few of our guests. Savannah’s communication was great, making coordination a breeze. I highly recommend Simply Savvy Charcuterie to anyone looking for beautiful and high quality charcuterie at their next event! Thanks again, Savannah!"</div>
-
-  <div class="testimonial">★★★★★<br>"Savannah did an amazing job on the grazing table for my company holiday party! Everyone was so impressed with the table. All the food was delicious and fresh. I would highly recommend her and will use her again!"</div>
-  <div class="testimonial">★★★★★<br>"Savannah does such an amazing job and pays so much attention to detail. If you need a tasty, personalized, themed board or snack, she will not disappoint. She's so accommodating and easy to work with. I cannot recommend enough!</div>
-
-  <section id="events">
-  <h2>Events & More</h2>
-  <p style="text-align:center;">
-    Simply Savvy Charcuterie isn’t just about boards—we also craft fresh fruit platters and vibrant veggie trays that elevate any event.
-<br><br>
-We cater to all kinds of gatherings, including wedding showers, baby showers, brunches, luncheons, birthdays, corporate events, and more.
-<br><br>
-Our boards are fully customizable to fit your style, preferences, and dietary needs. We’re happy to accommodate allergies, dietary restrictions, and special requests, just let us know!
-<br><br>
-Let us help you create something beautiful (and delicious) for your next celebration.
-  </p>
-</section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
-  <input type="hidden" name="form-name" value="contact" />
-  
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Tell us about your event or request" rows="5" required></textarea>
-  
-  <button type="submit">Request a Quote</button>
-</form>
-
-
-    <p style="text-align:center; margin-top: 2rem;">Email: Simplysavvycharcuterie@gmail.com<br>Phone: 262.720.9633</p>
+  <section class="section split-section cream">
+    <div class="split reveal">
+      <div>
+        <p class="eyebrow dark">Local & custom</p>
+        <h2>Beautifully crafted in Menomonee Falls, WI.</h2>
+        <p>Simply Savvy Charcuterie creates curated boards and event spreads that look just as good as they taste. Every order can be customized to fit your style, guest count, preferences, and dietary needs.</p>
+        <a class="btn primary" href="about.html">Meet Simply Savvy</a>
+      </div>
+      <img src="assets/medium 3.jpg" alt="Medium charcuterie board" />
+    </div>
   </section>
 
-  <footer>
-    &copy; 2025 Simply Savvy Charcuterie – Menomonee Falls, WI
-    <div class="social-icons">
-      <a href="https://www.instagram.com/simplysavvycharcuterie/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
-      </a>
-      <a href="https://www.facebook.com/people/Simply-Savvy-Charcuterie/61576973744688/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
-      </a>
+  <section class="section">
+    <div class="section-heading reveal">
+      <p class="eyebrow dark">A little peek</p>
+      <h2>Gallery preview</h2>
     </div>
+    <div class="gallery-preview reveal">
+      <img src="assets/pink cup.jpg" alt="Charcuterie cups" />
+      <img src="assets/Small board 2.jpg" alt="Small board" />
+      <img src="assets/Grazing.jpg" alt="Grazing table" />
+      <img src="assets/brunch new.jpg" alt="Brunch board" />
+    </div>
+    <div class="center"><a class="btn outline" href="gallery.html">View Gallery</a></div>
+  </section>
+
+  <section class="section testimonials cream">
+    <div class="section-heading reveal"><p class="eyebrow dark">Kind words</p><h2>What customers are saying</h2></div>
+    <div class="testimonial-grid reveal">
+      <div class="testimonial"><div class="stars">★★★★★</div><p>“Simply Savvy Charcuterie was PERFECT for my baby shower! The cups were a hit and they even offered gluten free cups.”</p></div>
+      <div class="testimonial"><div class="stars">★★★★★</div><p>“Savannah did an amazing job on the grazing table for my company holiday party! Everyone was so impressed.”</p></div>
+      <div class="testimonial"><div class="stars">★★★★★</div><p>“Savannah pays so much attention to detail. If you need a tasty, personalized board or snack, she will not disappoint.”</p></div>
+    </div>
+  </section>
+
+
+  <section class="final-cta">
+    <p class="eyebrow dark">Custom orders • events • delivery</p>
+    <h2>Let’s create something beautiful for your next gathering.</h2>
+    <a class="btn light" href="contact.html">Request a Quote</a>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-brand">Simply Savvy Charcuterie</div>
+    <p>Menomonee Falls, WI • Pickup & delivery available in surrounding areas</p>
+    <div class="footer-links">
+      <a href="mailto:Simplysavvycharcuterie@gmail.com">Simplysavvycharcuterie@gmail.com</a>
+      <a href="tel:2627209633">262.720.9633</a>
+      <a href="https://www.instagram.com/simplysavvycharcuterie/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/people/Simply-Savvy-Charcuterie/61576973744688/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p class="copyright">© 2026 Simply Savvy Charcuterie</p>
   </footer>
+  <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 
-  <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
 </body>
 </html>
-
-
-
-
-
