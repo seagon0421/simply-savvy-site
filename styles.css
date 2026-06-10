@@ -17,14 +17,15 @@
 
 .about-intro-image,
 .founder-photo {
-  flex: 0 0 320px;
-  max-width: 320px;
+  flex: 0 0 300px;
+  max-width: 300px;
 }
 
 .about-intro-image img,
 .founder-photo img {
-  width: 320px;
-  height: 420px;
+  width: 300px !important;
+  height: 400px !important;
+  max-width: 300px !important;
   object-fit: cover;
   border-radius: 18px;
   box-shadow: var(--shadow);
